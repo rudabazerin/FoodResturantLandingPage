@@ -1,0 +1,327 @@
+    @import url('https://fonts.googleapis.com/css2?family=League+Spartan&family=Poppins:ital,wght@0,100;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Ubuntu+Condensed&display=swap');
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    nav {
+        width: 100%;
+        height: 65px;
+        background-color: rgb(220, 239, 233);
+        line-height: 75px;
+        padding: 0px 80px;
+        position: fixed;
+        z-index: 1;
+    }
+    
+    nav .logo {
+        font-weight: bold;
+        font-size: 24px;
+        letter-spacing: 1px;
+    }
+    
+    nav .logo p {
+        float: left;
+        color: rgb(249, 152, 8);
+        text-transform: uppercase;
+    }
+    
+    nav ul {
+        float: right;
+    }
+    
+    nav ul li {
+        display: inline-block;
+        list-style: none;
+        height: 65px;
+    }
+    
+    nav ul li a {
+        color: rgb(10, 0, 0);
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 500;
+        text-transform: uppercase;
+        padding: 0 40px;
+    }
+    
+    nav ul li a:hover {
+        color: darkgreen;
+    }
+    
+    nav ul li .active {
+        color: blue;
+    }
+    
+    nav ul li .signup-btn {
+        width: 100px;
+        height: 50x;
+        font-size: 14px;
+        font-weight: 500;
+        color: rgb(255, 255, 255);
+        padding: 2px 10px;
+        background-color: rgb(14, 147, 14);
+        border-color: transparent;
+    }
+    
+    nav ul li .signup-btn:hover {
+        background-color: rgb(212, 121, 87);
+        transition: all 1s;
+    }
+    
+    .image {
+        width: 100%;
+        height: 600px;
+    }
+    
+    .image img {
+        width: 100%;
+        max-height: 600px !important;
+        transition: transform 2s;
+        margin: 0 auto;
+    }
+    
+    .image .banner .hero-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 38px;
+        font-weight: bolder;
+        color: white;
+        letter-spacing: 1px;
+    }
+    
+    .image .banner .hero-text .text1 {
+        font-size: 40px;
+        font-weight: 700;
+        letter-spacing: 8px;
+        animation: text 3s 1;
+    }
+    
+    @keyframes text {
+        0% {
+            color: black;
+            margin-left: -100px;
+        }
+        30% {
+            letter-spacing: 25px;
+            margin-left: -100px;
+        }
+        50% {
+            letter-spacing: 8px;
+            margin-left: -100px;
+        }
+        100% {
+            margin-left: 0px;
+        }
+    }
+    
+    .image .banner .hero-text p {
+        position: absolute;
+        text-align: center;
+        font-size: 15px;
+        color: white;
+        padding-top: 10px;
+        margin: 15px 50px;
+    }
+    
+    .hero-text .btn-div {
+        margin-left: 240px;
+        margin-top: 100px;
+    }
+    
+    .hero-btn {
+        position: absolute;
+        width: 170px;
+        height: 40px;
+        cursor: pointer;
+        background-color: rgb(214, 14, 100);
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        border-color: transparent;
+    }
+    
+    .hero-btn:hover {
+        background-color: rgb(32, 168, 220);
+        transition: ease-in 0.5s;
+    }
+    
+    .Cuisines-section {
+        width: 100%;
+        height: 420px;
+        background-color: aquamarine;
+        position: absolute;
+    }
+    
+    .Cuisines-section {
+        width: 100%;
+        height: 320px;
+        background-color: rgb(254, 254, 254);
+    }
+    
+    .Cuisines-section .heading {
+        width: 100%;
+        height: 45px;
+        background-color: rgb(238, 221, 224);
+    }
+    
+    .Cuisines-section .heading h1 {
+        text-align: center;
+        margin-top: 50px;
+        font-weight: 600;
+        font-size: 25px;
+        position: absolute;
+        padding-left: 650px;
+        letter-spacing: 2px;
+        overflow: hidden;
+        border-right: .15rem solid orange;
+        white-space: nowrap;
+        margin: 0 auto;
+        animation: typing 3.5s steps(20, end), blink-caret .75s step-end infinite;
+    }
+    
+    @keyframes typing {
+        from {
+            width: 0
+        }
+        to {
+            width: 100%
+        }
+    }
+    
+    @keyframes blink-caret {
+        from,
+        to {
+            border-color: transparent
+        }
+        50% {
+            border-color: rgb(205, 16, 104);
+        }
+    }
+    /* .Cuisines-section .slidersection .card-section {
+        position: absolute;
+        height: 300px;
+        margin-top: 20px;
+        height: 260px;
+        width: 100%;
+        z-index: 1;
+    } */
+    
+    .Cuisines-section ul {
+        float: right;
+        width: 100%;
+    }
+    
+    .Cuisines-section ul .card {
+        display: inline-block;
+        border: 1px solid pink;
+    }
+    
+    .Cuisines-section .card img {
+        width: 220px;
+        height: 150px;
+    }
+    
+    .Cuisines-section .card {
+        box-shadow: 5px 10px 8px #e884a9;
+        width: 270px;
+    }
+    
+    .Cuisines-section .card .container {
+        margin: 0px;
+    }
+    
+    .Cuisines-section .card .container h4 {
+        text-align: center;
+        width: 250px;
+    }
+    
+    .Cuisines-section .card .container h5 {
+        text-align: center;
+        width: 250px;
+    }
+    
+    .Cuisines-section .card .container p {
+        text-align: center;
+        font-size: 14px;
+    }
+    
+    .Cuisines-section .card .container .order-btn {
+        margin: 10px 80px;
+        padding: 5px 10px;
+        white-space: nowrap;
+        background-color: rgb(69, 201, 72);
+        border-color: transparent;
+        color: White;
+        font-weight: 500;
+        transition: all ease 1s;
+        cursor: pointer;
+    }
+    
+    .Cuisines-section .card .container .order-btn:hover {
+        background-color: crimson;
+    }
+    
+    .Cuisines-section .card {
+        margin: 20px 115px;
+    }
+    
+    .banner-2 {
+        margin-top: 350px;
+        width: 100%;
+        height: 420px;
+        background-color: rgb(190, 234, 236);
+        position: relative;
+    }
+    
+    .banner-2 .bannerText {
+        width: 100%;
+        height: 450px;
+        background-color: #f3ecee;
+        margin-right: 50px;
+        text-align: center;
+    }
+    
+    .banner-2 .bannerText h1 {
+        font-size: 24px;
+        font-weight: 500;
+        margin-top: 80px;
+        margin-left: 40px;
+        width: 100%;
+        color: crimson;
+    }
+    
+    .banner-2 .bannerText .h2 {
+        font-size: 12px;
+        font-weight: 400;
+        margin-top: 5px;
+        margin-left: 0px;
+    }
+    
+    .banner-2 .bannerText img {
+        height: 230px;
+        width: 270px;
+        box-shadow: 5px 10px #efe7e7;
+        border-radius: 5%;
+        margin-top: 40px;
+    }
+    
+    .banner-2 .bannerText .order-button {
+        width: 100px;
+        height: 35px;
+        margin-top: 10px;
+        background-color: rgb(69, 201, 72);
+        color: white;
+        font-weight: 400;
+        border-color: transparent;
+        transition: all 0.5s ease-in;
+        cursor: pointer;
+    }
+    
+    .banner-2 .bannerText .order-button:hover {
+        background-color: crimson;
+    }
